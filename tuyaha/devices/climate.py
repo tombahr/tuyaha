@@ -32,7 +32,7 @@ class TuyaClimate(TuyaDevice):
                 else:
                     divider = 1
 
-        return round(float(val / divider), 2)
+        return round(float(val) / divider, 2)
 
     # when unit is not provided by the API or the API return
     # incorrect value, it can be forced by this method
